@@ -2,6 +2,8 @@ package com.cocacola.model;
 
 import java.util.List;
 
+import javax.persistence.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -10,7 +12,7 @@ import lombok.Data;
 public class Company {
 	
 	
-	
+	@Id
 	private Integer idCompany;
 	
 	private String nameCompany;
