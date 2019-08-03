@@ -1,5 +1,7 @@
 package com.cocacola.model;
 
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -14,6 +16,8 @@ public class Departement {
 	private String nameDepartement;
 	
 	private Company company;
+	
+	private List<Employed> employeds;
 
 
 }
