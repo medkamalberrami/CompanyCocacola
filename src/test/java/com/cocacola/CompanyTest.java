@@ -2,10 +2,7 @@ package com.cocacola;
 
 
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertNotSame;
 
 import org.junit.Before;
 import org.junit.Ignore;
@@ -49,11 +46,9 @@ public class CompanyTest {
 
 		//assertSame(compare, result);	
 		
-		assertThat(compare).isEqualToComparingFieldByField(result);
-
+		assertNotSame("Verify that two objects are different", compare, result);
 
 		
-	    assertThat(compare, is(result));
 
 		
 
