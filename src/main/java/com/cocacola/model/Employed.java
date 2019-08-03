@@ -2,6 +2,7 @@ package com.cocacola.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,6 +19,7 @@ public class Employed {
 	private Double SalaryEmp;
 	private String userName;
 	private String password;
+	@OneToOne
 	private Departement departement;
 
 
