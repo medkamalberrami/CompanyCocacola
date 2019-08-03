@@ -16,6 +16,9 @@ public class Employed {
 	private String nameEmp;
 	private String typeEmp;
 	private Double SalaryEmp;
+	private String userName;
+	private String password;
+	private Departement departement;
 
 
 }
